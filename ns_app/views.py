@@ -56,28 +56,49 @@ def about(request):
 </nav>
 
 <!-- Header -->
-<div class="jumbotron text-center">
-    <h1 class="display-4">So'nggi yangiliklar</h1>
-    <p class="lead">Eng so'nggi vaqtincha xabarlarni ko'rib chiqing.</p>
+<div class="jumbotron jumbotron-fluid text-center bg-primary text-white">
+    <div class="container">
+        <h1 class="display-4">So'nggi yangiliklar</h1>
+        <p class="lead">Eng so'nggi vaqtincha xabarlarni ko'rib chiqing.</p>
+    </div>
 </div>
 
-<!-- Card -->
-<div class="container">
-    <div class="card-deck">
-        <div class="card">
-            <img src="https://placehold.it/300x200" class="card-img-top" alt="Yangilik rasmi">
-            <div class="card-body">
-                <h5 class="card-title">Yangilik 1</h5>
-                <p class="card-text">Bu birinchi yangilik matni bo'ladi. Batafsil ma'lumot uchun bog'laning.</p>
-                <a href="#" class="btn btn-primary">Batafsil</a>
+<!-- Main Content -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- News Cards -->
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <img src="https://placehold.it/800x400" class="card-img-top" alt="Yangilik rasmi">
+                <div class="card-body">
+                    <h2 class="card-title">Eng katta yangilik</h2>
+                    <p class="card-text">Bu birinchi yangilik matni bo'ladi. Batafsil ma'lumot uchun bog'laning.</p>
+                    <a href="#" class="btn btn-primary">Batafsil</a>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">So'nggi xabarlar</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">Xabar 1</a></li>
+                        <li class="list-group-item"><a href="#">Xabar 2</a></li>
+                        <li class="list-group-item"><a href="#">Xabar 3</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!-- Add more cards as needed -->
     </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-light text-center py-3">
+<footer class="bg-dark text-white py-3 text-center">
     &copy; 2024 Yangiliklar Sahifasi. Barcha huquqlar himoyalangan.
 </footer>
 
